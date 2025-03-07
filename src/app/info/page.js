@@ -53,7 +53,7 @@ const Info = () => {
         />
       </div>
       <div className="col">
-        <p className="text-2xl">
+        <p className="~text-lg/2xl prose prose-invert prose-lg prose-slate">
           Kaelon is a talented portrait photographer who specializes in
           capturing emotions and telling unique stories through his lens. His
           keen eye for detail and creative approach make every photograph a work
