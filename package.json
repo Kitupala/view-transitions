@@ -9,12 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.7"
+    "@gsap/react": "^2.1.2",
+    "clsx": "^2.1.1",
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.21",
+    "lucide-react": "^0.477.0",
+    "next": "15.2.0",
+    "next-view-transitions": "^0.3.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "split-type": "^0.3.4"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "fluid-tailwind": "^1.0.4",
     "postcss": "^8",
+    "prettier": "3.5.2",
     "tailwindcss": "^3.4.1"
   }
 }

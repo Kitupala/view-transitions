@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@plugin "@tailwindcss/typography";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,5 +19,99 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bricolage Grotesque", serif;
 }
+
+
+@layer components {
+  .nav-link {
+    @apply font-mono uppercase text-white text-sm;
+  }
+
+  .home h1 {
+    @apply clip absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase text-white text-[12vw] tracking-tighter font-semibold;
+  }
+
+  .home h1 .char {
+    @apply relative will-change-transform;
+  }
+
+  .col {
+    @apply flex flex-1 relative h-screen;
+  }
+
+  .col:nth-child(2) {
+    @apply p-12 justify-center items-center;
+  }
+
+  .col p .line {
+    @apply clip;
+  }
+
+  .col p .line span {
+    @apply relative will-change-transform;
+  }
+
+  #card-1 .card-inner{
+    @apply bg-[#a07fff];
+  }
+
+  #card-2 .card-inner{
+    @apply bg-[#ba1424];
+  }
+
+  #card-3 .card-inner{
+    @apply bg-[#0a0a0a];
+  }
+
+  #card-4 .card-inner{
+    @apply bg-[#1e1e1e];
+  }
+}
+
+@layer utilities {
+  .clip {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .kerning-none {
+    font-kerning: none;
+  }
+}
+
+@theme inline {
+  --radius-inherit: inherit;
+}
+
+
+/* noinspection CssInvalidPseudoSelector */
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+
+/* noinspection CssInvalidPseudoSelector */
+  ::view-transition-group(root) {
+    z-index: auto !important;
+  }
+
+/* noinspection CssInvalidPseudoSelector */
+  ::view-transition-image-pair(root) {
+    isolation: isolate;
+    will-change: transform, opacity, clip-path;
+    z-index: 1;
+  }
+
+/* noinspection CssInvalidPseudoSelector */
+::view-transition-new(root) {
+  z-index: 10000;
+  animation: none !important;
+}
+
+/* noinspection CssInvalidPseudoSelector */
+::view-transition-old(root) {
+  z-index: 1;
+  animation: none !important;
+}
+
+
