@@ -1,5 +1,5 @@
-# Project Dependencies 
-This project utilizes a combination of dependencies like GSAP, Lenis, and Split-Type to produce high-performance animations, smooth scrolling, and responsive layouts. Frameworks like Next.js and TailwindCSS help to build a modern, scalable, and visually captivating web application. Below is a description of the key dependencies:
+# view-transitions 
+This project utilizes a combination of dependencies like next-view-transitions, GSAP, Lenis, and Split-Type to produce high-performance animations, smooth scrolling, and responsive layouts. Frameworks like Next.js and TailwindCSS help to build a modern, scalable, and visually captivating web application. Below is a description of the key dependencies:
 ### **React**
 React is a JavaScript library for building user interfaces. It is used in this project to create reusable components, manage the state, and handle the rendering of the UI.
 Website: [https://reactjs.org/](https://reactjs.org/)
