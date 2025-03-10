@@ -82,7 +82,7 @@ body {
     @apply text-slate-100 text-lg;
   }
 
-  section {
+  .parallax section {
     @apply relative w-screen h-screen overflow-hidden;
   }
 
@@ -122,11 +122,11 @@ body {
     @apply relative flex flex-col justify-center items-center basis-1/3 p-4 !important;
   }
 
-  .intro {
+  .description {
     @apply flex flex-col items-center justify-center;
   }
 
-  .intro p {
+  .description p {
     @apply w-1/2 text-center;
   }
 

@@ -66,7 +66,7 @@ const Projects = () => {
       </section>
 
       <section className="about">
-        <div className="col intro">
+        <div className="col description">
           <p>
             This portrait series explores the intersection of cultural
             traditions and mortality through striking Día de los

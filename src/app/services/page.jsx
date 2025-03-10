@@ -127,7 +127,7 @@ const Services = () => {
         ))}
       </section>
 
-      <section className="flex items-center justify-center outro relative w-screen h-screen p-8">
+      <section className="outro flex items-center justify-center relative w-screen h-screen p-8">
         <h1 className="~text-3xl/7xl tracking-tighter p-8">
           Let's leave a mark.
         </h1>

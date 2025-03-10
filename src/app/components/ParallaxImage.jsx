@@ -71,7 +71,7 @@ const ParallaxImage = ({ src, alt }) => {
       alt={alt}
       fill
       loading="lazy"
-      placeholder="blur"
+      // placeholder="blur"
       className="object-cover translate-y-0 scale-125 will-change-transform"
     />
   );
